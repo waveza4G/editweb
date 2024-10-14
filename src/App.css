@@ -1,0 +1,115 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  z-index: 1000; /* เพื่อให้แถบอยู่บนสุด */
+}
+
+.main-content {
+  margin-top: 80px; /* กำหนดตามความสูงของแถบด้านบน */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  z-index: 1000; /* ทำให้แถบอยู่บนสุด */
+}
+
+/* ใช้ไฮไลท์เฉพาะวันที่ที่มีการบันทึกข้อมูล */
+/* CSS สำหรับการไฮไลต์วันที่ที่มีรายการบันทึก */
+/* สไตล์สำหรับปฏิทิน */
+.custom-calendar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.custom-calendar header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day-header, .calendar-day {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.calendar-day {
+  cursor: pointer;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.calendar-day.empty {
+  background: transparent;
+  cursor: default;
+}
+
+.income {
+  font-size: 0.8rem;
+  color: green;
+}
+
+.expense {
+  font-size: 0.8rem;
+  color: red;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
